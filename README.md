@@ -66,3 +66,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+"# full-stack-serverless-cryptoapp"  git init git add README.md git commit -m "first commit" git branch -M master git remote add origin git@github.com:keatonwilliamson/full-stack-serverless-cryptoapp.git git push -u origin master
