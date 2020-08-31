@@ -33,12 +33,12 @@
 				"FunctionName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"cryptofunction",
+						"crryptofunction",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"cryptofunction",
+									"crryptofunction",
 									"-",
 									{
 										"Ref": "env"
@@ -68,8 +68,8 @@
 				"Layers": [],
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-cryptoapp-local-171623-deployment",
-					"S3Key": "amplify-builds/cryptofunction-7a636d46545955643366-build.zip"
+					"S3Bucket": "amplify-cryptoapp-local-203523-deployment",
+					"S3Key": "amplify-builds/cryptofunction-324f73715a6651555932-build.zip"
 				}
 			}
 		},
@@ -79,12 +79,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"cryptoappLambdaRole2831ab26",
+						"cryptoappLambdaRolecb2c0b27",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"cryptoappLambdaRole2831ab26",
+									"cryptoappLambdaRolecb2c0b27",
 									"-",
 									{
 										"Ref": "env"

@@ -6,34 +6,20 @@ import { API } from 'aws-amplify'
 
 function App() {
 
-  const [input, setInput] = useState({ limit: 5, start: 0 });
   const [coins, setCoins] = useState([]);
 
   async function fetchCoins() {
-    const { limit, start } = input
-    const data = await API.get('cryptoapi', `/coins?limit=${limit}&start=${start}`)
+    const data = await API.get('cryptoapi', '/coins')
     setCoins(data.coins)
-  }
-
-  function updateInputValues(type, value) {
-    setInput({ ...input, [type]: value })
   }
 
   useEffect(() => {
     fetchCoins()
+
   }, []);
 
   return (
     <div className="App">
-      <input
-        onChange={e => updateInputValues('limit', e.target.value)}
-        placeholder="limit"
-      />
-      <input
-        onChange={e => updateInputValues('start', e.target.value)}
-        placeholder="start"
-      />
-      <button onClick={fetchCoins}>Fetch Coins</button>
       {
         coins.map((coin, index) => (
           <div key={index}>
